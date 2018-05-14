@@ -77,6 +77,8 @@ header {
   height: 100%;
   background: url('http://fred.wf/e-sport/assets/img/gaming.png') center center no-repeat;
   background-size: cover;
+  z-index: -1;
+  position: absolute;
 }
 
   .bg-img::before {
@@ -92,6 +94,19 @@ header {
   opacity: .7;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan h1:first-child {
+  background-color: rgba(5,64,95,.5);
+  color: white;
+  font-size: 70px;
+}
+
+/* about e-sportcenter */
 
 .about-esportcenter {
   display: flex;
