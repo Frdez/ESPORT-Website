@@ -65,22 +65,31 @@ body {
 /* HEADER */
 
 header {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   overflow: hidden;
 }
 
 
-.gradient img {
+  .bg-img {
   position: relative;
-  bottom: 200px;
+  width: 100%;
+  height: 100%;
+  background: url('http://fred.wf/e-sport/assets/img/gaming.png') center center no-repeat;
+  background-size: cover;
 }
 
-.gradient {
+  .bg-img::before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
   background: #2c3e50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2c3e50, #8ccdc8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2c3e50, #8ccdc8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #8ccdc8, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .7;
 }
 
 
