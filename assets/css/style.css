@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Standarts */
+
+.flex {
+  display: flex;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+/* navigation */
+
+#site-nav {
+  width: 100%;
+  height: 10vh;
+  background: #314852;
+  align-items: center;
+  justify-content: center;
+}
+
+#site-nav button {
+  width: 100px;
+  height: 40%;
+  border-radius: 40px;
+  margin-left: 20px;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#site-nav ul li {
+  display: inline;
+  border-right: solid 1px white;
+  padding: 0 10px 0 5px;
+}
+
+#site-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#site-nav ul li:last-child {
+  border-right: none;
+}
+
+#logo-nav {
+  width: 4%;
+}
+
+.globe,
+.search {
+  margin-right: 5px;
+}
+
+/* HEADER */
