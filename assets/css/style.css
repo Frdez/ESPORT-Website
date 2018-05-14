@@ -98,4 +98,19 @@ header {
   position: relative;
   background-color: #243440;
   height: 50vh;
+  width: 100%;
+}
+
+.about-esportcenter-text {
+  width: 50%;
+  padding: 50px 50px 50px 50px;
+  color: white;
+}
+
+
+.about-esportcenter-video {
+  background-color: green;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
