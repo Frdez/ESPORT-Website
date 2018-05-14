@@ -71,6 +71,30 @@ header {
 }
 
 
+
+/* .overlay {
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);
+  background: linear-gradient(to bottom, #8ccdc8, #2c3e50);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+header img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: .2;
+} */
+
   .bg-img {
   position: relative;
   width: 100%;
@@ -88,9 +112,9 @@ header {
 	right: 0;
 	bottom: 0;
 	left: 0;
-  background: #2c3e50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #8ccdc8, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);
+  background: linear-gradient(to bottom, #8ccdc8, #2c3e50);
   opacity: .7;
 }
 
@@ -107,7 +131,7 @@ header {
   position: absolute;
   top: 50%;
   left: 10vw;
-  transform: translate(0, -50%);
+  transform: translate(0, -20%);
 }
 
 .slogan h1:first-child {
