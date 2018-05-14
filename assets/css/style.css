@@ -219,18 +219,28 @@ h2 {
 .training-value-text {
   display: flex;
   order: 2;
-  width: 60%;
+  width: 50%;
   background-color: blue;
   color: white;
   justify-content: center;
   flex-direction: column;
   margin: 3% 10% 3% 5%;
+  box-sizing: border-box;
 }
 
 .training-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   order: 1;
-  width: 40%;
+  width: 50%;
   background-color: green;
+}
+
+#medal {
+  height: auto;
+  width: 40%;
+
 }
 
 .communication-value {
