@@ -168,8 +168,14 @@ header img {
 
 /* about e-sportcenter */
 
+h2 {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
 p {
   line-height: 1.73;
+  color: #f3f1f0;
 }
 
 .about-esportcenter {
@@ -182,7 +188,6 @@ p {
 
 .about-esportcenter-text {
   width: 50%;
-  color: #f3f1f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
