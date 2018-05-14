@@ -168,6 +168,10 @@ header img {
 
 /* about e-sportcenter */
 
+h2 {
+  margin: 0;
+}
+
 .about-esportcenter {
   display: flex;
   position: relative;
@@ -182,7 +186,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3% 5% 3% 5%;
+  padding: 3% 5% 3% 10%;
 }
 
 .about-esportcenter-heading {
@@ -194,8 +198,7 @@ header img {
   width: 50%;
   align-items: center;
   justify-content: center;
-  padding: 3% 5% 3% 5%;
-  box-sizing: border-box;
+  padding: 3% 10% 3% 5%;
 }
 
 /* values */
@@ -211,6 +214,23 @@ header img {
 .training-value {
   height: 50vh;
   background-color: #486c75;
+}
+
+.training-value-text {
+  display: flex;
+  order: 2;
+  width: 60%;
+  background-color: blue;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3% 10% 3% 5%;
+}
+
+.training-value-icon {
+  order: 1;
+  width: 40%;
+  background-color: green;
 }
 
 .communication-value {
