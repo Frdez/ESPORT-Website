@@ -118,8 +118,15 @@ header {
 
 .about-esportcenter-text {
   width: 50%;
-  padding: 50px 50px 50px 50px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5% 0 5%;
+}
+
+.about-esportcenter-heading {
+  margin: 0;
 }
 
 .about-esportcenter-video {
