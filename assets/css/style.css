@@ -256,20 +256,19 @@ iframe {
 
 .communication-value {
   height: 50vh;
-  background-color: #243440;
+  background-color: #486c75;
 }
 
 /* faciliteter */
 
-.container {
+.polygon-wrapper {
   height: 100vh;
   width: 100%;
 }
 
-.shape {
+.polygon-right-faciliteter {
   position: absolute;
   right: 0;
-  order: 2;
   height: 100vh;
   width: 55.6%;
   shape-outside: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
@@ -280,7 +279,7 @@ iframe {
 }
 
 
-.shape1 {
+.polygon-left-faciliteter {
   position: absolute;
   height: 100vh;
   width: 55.6%;
@@ -291,7 +290,7 @@ iframe {
   transform: scaleZ(1.0001);
 }
 
-.shape1::before {
+.polygon-left-faciliteter::before {
   content: '';
   position: absolute;
   top: 0;
@@ -310,6 +309,55 @@ iframe {
   flex-direction: column;
   height: 100vh;
   margin: 0 10vw 0 18.6vw;
+  box-sizing: border-box;
+  color: #f3f1f0;
+}
+
+/* arrangør afsnit */
+
+.polygon-right-arrangør {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: 55.6%;
+  shape-outside: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  transform: scaleZ(1.0001);
+  z-index: 100;
+  background: url('../img/arrangør.png') center center no-repeat;
+  background-size: cover;
+}
+
+.polygon-left-arrangør {
+  position: absolute;
+  height: 100vh;
+  width: 55.6%;
+  background-color: #243440;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  transform: scaleZ(1.0001);
+}
+
+.polygon-right-arrangør::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+.text-box-polygon-arrangør {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 18.6vw 0 10vw;
   box-sizing: border-box;
   color: #f3f1f0;
 }
