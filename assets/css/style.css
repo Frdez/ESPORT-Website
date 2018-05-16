@@ -161,16 +161,29 @@ header img {
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
   background-color: white;
+  color: #333333;
   border: none;
   outline: none;
   cursor: pointer;
   margin-top: 5%;
   font-size: 20px;
   justify-content: center;
+  box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
+  -moz-box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
+  -webkit-box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
+  text-shadow: 0 1px 0 #FFFFFF;
+  transition: all 0.3s ease;
 }
 
 .learn-more {
   margin: auto;
+}
+
+.learn-more:hover, .learn-more:active {
+  border: none;
+  background-color: #cccccc;
+  opacity: 0.75;
+  transform: scale(0.95);
 }
 
 /* about e-sportcenter */
