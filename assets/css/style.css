@@ -171,18 +171,17 @@ header img {
 .slogan h1:first-child {
   background-color: rgba(5,64,95,.5);
   color: white;
-  font-size: 70px;
+  font-size: 3.5vw;
   margin: 0;
-  width: 400px;
+  width: 20vw;
   padding: 5px 10px 0 10px;
   font-family: 'Work Sans', sans-serif;
 }
 .innerathlete {
   background-color: rgba(5,64,95,.5);
   color: white;
-  font-size: 50px;
+  font-size: 2.5vw;
   margin: 0;
-  width: 690px;
   padding: 10px;
   font-family: 'Work Sans', sans-serif;
 }
@@ -235,6 +234,7 @@ p {
   background-color: #243440;
   height: 50vh;
   width: 100%;
+  font-size: 1vw;
 }
 
 .about-esportcenter-text {
