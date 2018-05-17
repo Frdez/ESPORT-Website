@@ -539,17 +539,25 @@ footer {
   to {opacity: 1}
 }
 
-/* E-SPORTS UNDERSIDER - ARRANGØR */
+
+
+
+
+
+
+
+
+/* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
 
 header.for_arrangoerer {
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
     overflow: hidden;
     position: relative;
     background: url('http://fred.wf/e-sport/assets/img/gaming.png') center center no-repeat;
     background-size: cover;
     z-index: -1;
-    position: absolute;
+    position: relative;
 }
 
 header div.slogan_for_arrangoerer{
@@ -598,9 +606,24 @@ header.for_arrangoerer h1.bottom {
 }
 
 
+section.plads_til_over {
+    height: 40vh;
+    width: 100vw;
+    background: #243440;
+    position: relative;
+
+}
+
+section.lige_ved_stationen{
+    height: 40vh;
+    width: 100vw;
+    background: #486c75;
+    position: relative;
+}
 
 
-/* E-SPORTS UNDERSIDER - ARRANGØR */
+
+/* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
 
 
 
