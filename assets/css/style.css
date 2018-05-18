@@ -233,7 +233,7 @@ p {
   color: #f3f1f0;
 }
 
-.about-esportcenter {
+#about_esportcenter {
   display: flex;
   position: relative;
   background-color: #243440;
