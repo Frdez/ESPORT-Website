@@ -3,6 +3,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 /* Standarts */
 
 .flex {
@@ -144,8 +148,8 @@ header img {
   bottom: 0;
   left: 0;
   background: #2c3e50;
-  background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);
-  background: linear-gradient(to bottom, #8ccdc8, #2c3e50);
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
   opacity: .7;
 }
 
@@ -192,7 +196,7 @@ header img {
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
   background-color: white;
-  color: #333333;
+  color: black;
   border: none;
   outline: none;
   cursor: pointer;
@@ -234,7 +238,7 @@ p {
   background-color: #243440;
   height: 50vh;
   width: 100%;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 
 .about-esportcenter-text {
@@ -249,7 +253,16 @@ p {
 .about-esportcenter-heading {
   margin: 0;
   color: white;
+  text-align: center;
 }
+
+.sep {
+  position: relative;
+  margin:10px 0 20px 0;
+  border-top: 1px solid;
+  color: #405d72;
+}
+
 
 .about-esportcenter-video {
   display: flex;
@@ -274,9 +287,7 @@ iframe {
 
 .bootcamp {
   height: 50vh;
-  background: #2c3e50;
-  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
-  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  background: #486c75;
 }
 
 .bootcamp-text {
@@ -291,7 +302,7 @@ iframe {
   font-size: 0.9vw;
 }
 
-.bootcamp-text button {
+.section-button {
   width: 120px;
   height: 40px;
   border-radius: 40px;
@@ -449,8 +460,6 @@ iframe {
 .vores-spil {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 50vh;
   background: #2c3e50;
   background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
   background: linear-gradient(to bottom, #486c75, #2c3e50);
@@ -464,13 +473,22 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .spil {
-  height: 40vh;
-  width: 15vw;
+  height: 425px;
+  width: 285px;
   background-color: white;
   box-shadow: 0 15px 12px rgba(0,0,0,0.12);
+  margin: 3% 0 3% 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.spil:hover {
+  opacity: 0.75;
+  transform: scale(0.9);
 }
 
 
@@ -478,7 +496,7 @@ iframe {
 
 footer {
   display: flex;
-  height: 40vh;
+  height: 35vh;
   background-color: #192730;
 }
 
@@ -488,7 +506,7 @@ footer {
   justify-content: center;
   color: #f3f1f0;
   width: 50%;
-  height: 40vh;
+  height: 35vh;
   margin: 0 10% 0 10%;
 }
 
@@ -695,9 +713,9 @@ top: 0;
 right: 0;
 bottom: 0;
 left: 0;
-background: #2c3e50;
-background: -webkit-linear-gradient(to bottom, #8ccdc8, #2c3e50);
-background: linear-gradient(to bottom, #8ccdc8, #2c3e50);
+background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 opacity: .7;
 }
 
@@ -747,7 +765,7 @@ section.lige_ved_stationen {
   position: absolute;
   left: 0;
   height: 50vh;
-  width: 50%;
+  width: 55.6%;
   background: #fff;
   background: url(../img/sportshal.png);
   background-size: cover;
@@ -772,7 +790,7 @@ section.lige_ved_stationen {
   position: absolute;
   right: 0;
   height: 50vh;
-  width: 60%;
+  width: 55.6%;
   background: #243440;
   -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
@@ -789,7 +807,7 @@ section.lige_ved_stationen {
   position: absolute;
   right: 0;
   height: 50vh;
-  width: 60%;
+  width: 55.6%;
   background: url(../img/kort.png);
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
@@ -813,7 +831,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
   position: absolute;
   left: 0;
   height: 50vh;
-  width: 50%;
+  width: 55.6%;
   background: #486c75;
   -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
@@ -822,7 +840,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .ligevedstationen-tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 10%;
+  padding: 12% 10% 10% 25%;
   color: white;
 }
 
@@ -830,7 +848,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
   position: absolute;
   left: 0;
   height: 50vh;
-  width: 52%;
+  width: 55.6%;
   background: #fff;
   background: url(../img/fiber-optic.png);
   background-size: cover;
@@ -855,16 +873,16 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
   position: absolute;
   right: 0;
   height: 50vh;
-  width: 50%;
+  width: 55.6%;
   background: #243440;
   -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .internet_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 10%;
+  padding: 12% 10% 10% 25%;
   color: white;
 }
 
