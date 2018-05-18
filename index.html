@@ -47,11 +47,11 @@
       <div class="slogan">
         <h1>BE A HERO.</h1>
         <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
-        <button class="learn-more" type="button" name="button">LÆR MERE</button>
+        <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
       </div>
   </header>
 
-  <section class="about-esportcenter">
+  <section id="about_esportcenter">
     <div class="about-esportcenter-text">
       <h2 class="about-esportcenter-heading">E-SPORTS CENTER BLAAVANDSHUK</h2>
       <div class="sep"></div>
@@ -146,6 +146,15 @@
       <a href="#" class="fab fa-youtube"></a>
     </div>
   </footer>
+
+    <script>
+        function ESC() {
+        var elmnt = document.getElementById("about_esportcenter");
+        elmnt.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    }
+    </script>
+
+
 </body>
 
 </html>
