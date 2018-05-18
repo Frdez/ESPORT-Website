@@ -705,7 +705,6 @@ section.sportspark_nyheder {
 section div.infobox img {
     height: 25vh;
     width: 20vw;
-    margin: auto;
 }
 
 
@@ -732,14 +731,20 @@ div.wrap{
 }
 
 div.sponsor {
-    position: relative;
     flex: 1 19%;
     height: 200px;
     width: 500px;
     background: green;
     border: solid 2px black;
-
 }
+
+div.sponsor img{
+    height: 190px;
+    width: 190px;
+    overflow: hidden;
+}
+
+
 
 /* -----------SPORTSPARK----------- */
 
