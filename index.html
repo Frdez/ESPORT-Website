@@ -37,18 +37,44 @@
     </div>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="assets/img/arrow.png" alt="arrow"></i></button>
-      <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color: #669999;color:white;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
+      <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color:white;color:black;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
   </nav>
 
-  <header>
-    <!-- <div class="overlay"></div>
-    <img src="assets/img/gaming.png" alt=""> -->
-    <div class="bg-img"></div>
-      <div class="slogan">
-        <h1>BE A HERO.</h1>
-        <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
-        <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
-      </div>
+  <header id="slideshow">
+
+    <div id="contentwrapper">
+        <div id="itemOne" class="content">
+          <div class="slogan">
+            <h1>BE A HERO.</h1>
+            <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+
+        <div id="itemTwo" class="content">
+          <div class="slogan">
+            <h1 style="font-size: 2.5vw;">HOLD ET EVENT</h1>
+            <h1 class="innerathlete">UDEN BEGRÆNSNINGER</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+
+        <div id="itemThree" class="content">
+          <div class="slogan">
+            <h1>BE A HERO.</h1>
+            <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+    </div>
+
+    <div id="navLinks">
+      <ul>
+          <li class="itemLinks" data-pos="0vw"></li>
+          <li class="itemLinks" data-pos="-100vw"></li>
+          <li class="itemLinks" data-pos="-200vw"></li>
+      </ul>
+  </div>
   </header>
 
   <section id="about_esportcenter">
@@ -152,6 +178,72 @@
         var elmnt = document.getElementById("about_esportcenter");
         elmnt.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     }
+    </script>
+
+    <script>
+      var links = document.querySelectorAll(".itemLinks");
+      var wrapper = document.querySelector("#contentwrapper");
+
+      var activeLink = 0;
+
+      for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          link.addEventListener('click', setClickedItem, false);
+
+        link.itemID = i;
+      }
+
+      links[activeLink].classList.add("active");
+
+      function setClickedItem(e) {
+        removeActiveLinks();
+
+        var clickedLink = e.target;
+        activeLink = clickedLink.itemID;
+
+        changePosition(clickedLink);
+      }
+
+      function removeActiveLinks() {
+        for (var i = 0; i < links.length; i++) {
+            links[i].classList.remove("active");
+        }
+      }
+
+      function changePosition(link) {
+        var position = link.getAttribute("data-pos");
+
+        var translateValue = "translate3d(" + position +", 0px, 0)";
+        wrapper.style.transform = translateValue;
+
+        link.classList.add("active");
+      }
+
+      var timeoutID;
+
+      function startTimer() {
+        timeoutID = window.setInterval(goToNextItem, 10000);
+      }
+
+      startTimer();
+
+      function resetTimer() {
+        window.clearInterval(timeoutID);
+        startTimer();
+      }
+
+      function goToNextItem() {
+        removeActiveLinks();
+
+        if (activeLink < links.length - 1){
+            activeLink++
+        } else {
+          activeLink = 0;
+        }
+
+        var newLink = links[activeLink];
+        changePosition(newLink);
+      }
     </script>
 
 
