@@ -666,7 +666,24 @@ section.lige_ved_stationen{
 
 
 
+/* -----------SPORTSPARK - ARRANGØR----------- */
+#site-nav.sportspark{
+background: white;
+}
 
+#site-nav.sportspark ul li {
+border-color: #292929;
+}
+#site-nav.sportspark ul li a{
+  color: #292929;
+}
+
+#site-nav.sportspark .dropdown .dropbtn {
+    color: black;
+}
+
+
+/* -----------SPORTSPARK - ARRANGØR----------- */
 
 
 
