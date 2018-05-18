@@ -13,6 +13,11 @@ body {
   flex-direction: row;
 }
 
+.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
 /* navigation */
 
 #site-nav {
@@ -584,7 +589,7 @@ footer {
 }
 
 
-/* -----------SPORTSPARK - ARRANGØR----------- */
+/* -----------SPORTSPARK----------- */
 #site-nav.sportspark{
 background: white;
 }
@@ -600,8 +605,54 @@ border-color: #292929;
     color: black;
 }
 
+header.sportspark {
+    height: 45vh;
+    width: 100%;
+    overflow: hidden;
+}
 
-/* -----------SPORTSPARK - ARRANGØR----------- */
+header.sportspark img{
+    display: block;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 2vh auto 2vh auto;
+}
+
+section.sportspark_info {
+    position: relative;
+    width 100%;
+    height 100%;
+    display flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+section div.infobox {
+    display: inline-block;
+    background: #1966ad;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 200px;
+    height: 210px;
+    margin: 10px;
+}
+
+section.sportspark_nyheder {
+    background: green;
+    height: 60vh;
+    width: 100%;
+}
+
+section.instagram {
+    position: relative;
+    background: red;
+    height: 40vh;
+    width: 100%;
+    color: #292929;
+}
+
+/* -----------SPORTSPARK----------- */
 
 
 
