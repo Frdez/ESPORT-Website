@@ -687,6 +687,16 @@ section.instagram {
     color: #292929;
 }
 
+section#sponsorer {
+    position: relative;
+    background: blue;
+    height: 40vh;
+    width: 100%;
+    color: #292929;
+}
+
+
+
 /* -----------SPORTSPARK----------- */
 
 
