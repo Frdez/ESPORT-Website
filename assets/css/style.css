@@ -583,6 +583,26 @@ footer {
   }
 }
 
+/* -----------E-SPORTS UNDERSIDER - BOOKNING---------- */
+
+.pakkehelper{
+  display:flex;
+}
+
+.pakkeholder {
+  background-color: white;
+  height: 450px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.pakkenavn {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
 /* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
 
 header.for_arrangoerer {
