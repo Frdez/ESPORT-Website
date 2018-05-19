@@ -37,25 +37,52 @@
     </div>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
       <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="assets/img/arrow.png" alt="arrow"></i></button>
-      <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color: #669999;color:white;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
+      <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color:white;color:black;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
   </nav>
 
-  <header>
-    <!-- <div class="overlay"></div>
-    <img src="assets/img/gaming.png" alt=""> -->
-    <div class="bg-img"></div>
-      <div class="slogan">
-        <h1>BE A HERO.</h1>
-        <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
-        <button class="learn-more" type="button" name="button">LÆR MERE</button>
-      </div>
+  <header id="slideshow">
+
+    <div id="contentwrapper">
+        <div id="itemOne" class="content">
+          <div class="slogan">
+            <h1>BE A HERO.</h1>
+            <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+
+        <div id="itemTwo" class="content">
+          <div class="slogan">
+            <h1 style="font-size: 2.5vw;">HOLD ET EVENT</h1>
+            <h1 class="innerathlete">UDEN BEGRÆNSNINGER</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+
+        <div id="itemThree" class="content">
+          <div class="slogan">
+            <h1>BE A HERO.</h1>
+            <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
+            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+          </div>
+        </div>
+    </div>
+
+    <div id="navLinks">
+      <ul>
+          <li class="itemLinks" data-pos="0vw"></li>
+          <li class="itemLinks" data-pos="-100vw"></li>
+          <li class="itemLinks" data-pos="-200vw"></li>
+      </ul>
+  </div>
   </header>
 
-  <section class="about-esportcenter">
+  <section id="about_esportcenter">
     <div class="about-esportcenter-text">
       <h2 class="about-esportcenter-heading">E-SPORTS CENTER BLAAVANDSHUK</h2>
+      <div class="sep"></div>
       <p>
-        Bliv bedre til dine favorit spil i de bedste omgivelser med dine venner, Blaavandshuuk E-sport center sørger ikke blot for at du får et ophold fyldt med gaming, og fede oplevelser, men også de oplevelser imellem de lange gaming sessioner.
+        Bliv bedre til dine favorit spil i de bedste omgivelser med dine venner, Blaavandshuuk E-sport center sørger ikke blot for at du får et ophold fyldt med gaming og fede oplevelser, men også de oplevelser imellem de lange gaming sessioner.
         <br><br>
         En tur i poolen efter en intense kamp counter-strike? eller måske en tur i fitness for at få pulsen op efter en god kamp Fifa?
         Hos blaavandshuuk er et ophold i E-sports centeret mere end blot gaming. Det er træning i både det mentale og fysiske på den sjove måde!
@@ -70,21 +97,28 @@
     <div class="bootcamp flex">
       <div class="bootcamp-text">
         <h2>BOOTCAMPS</h2>
+        <div class="sep" style="color: #61929e;"></div>
         <p>
           Hos Blaavandshuuk E-sport center er vi stolte af at kunne tilbyde bootcamps der inkluderer alt fra træning i dine favorit spil til overnatning i de fedeste designer hytter. En weekend med vennerne? Prøv en bootcamp fyldt med massere af gaming, træning og sjov!
         </p>
-        <button type="button" name="button">Læs mere</button>
+        <button class="section-button" type="button" name="button">Læs mere </button>
       </div>
       <div class="bootcamp-icon">
         <img id="bootcamppic" src="assets/img/bootcamp.svg" alt="medal">
       </div>
     </div>
+
     <div class="membership flex">
       <div class="membership-text">
         <h2>MEDLEMSKAB ELLER DROP-IN</h2>
+        <div class="sep"></div>
         <p>
-          Labores denique accumsan et mei, mundi alienum pri cu. Qui quando ubique audiam an, et cum soleat forensibus, usu ad tota partem corpora. Ad laudem    reformidans his, justo luptatum ad eum, errem elaboraret nam ex. At saepe putent per. Nihil inimicus consulatu sit ad, te est eirmod consulat.
+          Træt af den lokale netcafe?
+          Hos Blaavandshuuk E-sport center har vi i fokus at skabe et fælleskab af engagerede gamere. Et medlemskab i Blaavandshuuk E-sport center giver dig mulighed for engagere dig med andre folk som dyrker E-sport på alle nivauer.
+
+          Måske er dine næste hold kamerater lige rundt of hjørnet?
         </p>
+        <button class="section-button" type="button" name="button">Læs mere</button>
       </div>
     </div>
   </section>
@@ -93,7 +127,8 @@
     <div class="polygon-right-faciliteter">
       <div class="text-box-polygon">
           <h2>Om faciliteterne</h2>
-          <p>  Labores denique accumsan et mei, mundi alienum pri cu. Qui quando ubique audiam an, et cum soleat forensibus, usu ad tota partem corpora. Ad laudem    reformidans his, justo luptatum ad eum, errem elaboraret nam ex. At saepe putent per. Nihil inimicus consulatu sit ad, te est eirmod consulat.</p>
+          <div class="sep"></div>
+          <p>  Udover de bedste computere, tilbyder Blaavandshuk sportscenter muligheder for at nyde andre faciliteter imellem dine lange gaming sessioner. Vi er dækket ind i næsten alle fysiske faciliteter, så du kan få et ophold fyldt med forskellige aktiviteter! .</p>
       </div>
     </div>
     <div class="polygon-left-faciliteter"></div>
@@ -104,10 +139,21 @@
     </div>
     <div class="polygon-left-arrangør">
       <div class="text-box-polygon-arrangør">
-          <h2>Om faciliteterne</h2>
+          <h2>HOLD DIT ARRANGMENT UDEN BEGRÆNSNINGER</h2>
+          <div class="sep"></div>
           <p>  Labores denique accumsan et mei, mundi alienum pri cu. Qui quando ubique audiam an, et cum soleat forensibus, usu ad tota partem corpora. Ad laudem    reformidans his, justo luptatum ad eum, errem elaboraret nam ex. At saepe putent per. Nihil inimicus consulatu sit ad, te est eirmod consulat.</p>
       </div>
     </div>
+  </section>
+
+  <section class="vores-spil">
+      <h2>Vores nuværende E-sport spil</h2>
+      <div class="spil-wrapper">
+        <img class="spil" src="assets/img/counterstrike.jpg" alt="">
+        <img class="spil" src="assets/img/fortnite.PNG" alt="">
+        <img class="spil" src="assets/img/Lol.jpg" alt="">
+        <img class="spil" src="assets/img/dota2.jpg" alt="">
+      </div>
   </section>
 
   <footer>
@@ -126,6 +172,81 @@
       <a href="#" class="fab fa-youtube"></a>
     </div>
   </footer>
+
+    <script>
+        function ESC() {
+        var elmnt = document.getElementById("about_esportcenter");
+        elmnt.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    }
+    </script>
+
+    <script>
+      var links = document.querySelectorAll(".itemLinks");
+      var wrapper = document.querySelector("#contentwrapper");
+
+      var activeLink = 0;
+
+      for (var i = 0; i < links.length; i++) {
+          var link = links[i];
+          link.addEventListener('click', setClickedItem, false);
+
+        link.itemID = i;
+      }
+
+      links[activeLink].classList.add("active");
+
+      function setClickedItem(e) {
+        removeActiveLinks();
+
+        var clickedLink = e.target;
+        activeLink = clickedLink.itemID;
+
+        changePosition(clickedLink);
+      }
+
+      function removeActiveLinks() {
+        for (var i = 0; i < links.length; i++) {
+            links[i].classList.remove("active");
+        }
+      }
+
+      function changePosition(link) {
+        var position = link.getAttribute("data-pos");
+
+        var translateValue = "translate3d(" + position +", 0px, 0)";
+        wrapper.style.transform = translateValue;
+
+        link.classList.add("active");
+      }
+
+      var timeoutID;
+
+      function startTimer() {
+        timeoutID = window.setInterval(goToNextItem, 10000);
+      }
+
+      startTimer();
+
+      function resetTimer() {
+        window.clearInterval(timeoutID);
+        startTimer();
+      }
+
+      function goToNextItem() {
+        removeActiveLinks();
+
+        if (activeLink < links.length - 1){
+            activeLink++
+        } else {
+          activeLink = 0;
+        }
+
+        var newLink = links[activeLink];
+        changePosition(newLink);
+      }
+    </script>
+
+
 </body>
 
 </html>
