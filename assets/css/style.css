@@ -22,12 +22,14 @@ div.wrapper {
 /* navigation */
 
 #site-nav {
+  position: relative;
   width: 100%;
   height: 10vh;
   background: #314852;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
 }
 
 #site-nav ul li {
@@ -399,6 +401,7 @@ p {
   height: 50vh;
   width: 100%;
   font-size: 0.8vw;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .about-esportcenter-text {
@@ -931,7 +934,7 @@ div.sponsor img{
 
 /* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
 
-header.for_arrangoerer {
+.for_arrangoerer {
   height: 70vh;
   width: 100%;
   overflow: hidden;
@@ -939,7 +942,7 @@ header.for_arrangoerer {
 
 header div.slogan_for_arrangoerer {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
@@ -1037,6 +1040,8 @@ section.lige_ved_stationen {
 
 .polygon-right {
   position: absolute;
+  display: flex;
+  align-items: center;
   right: 0;
   height: 50vh;
   width: 55.6%;
@@ -1048,8 +1053,9 @@ section.lige_ved_stationen {
 .plads_til_over_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  padding: 0 10% 0 25%;
   color: white;
+
 }
 
 .polygon-right-ligevedstationen {
@@ -1078,6 +1084,8 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 
 .polygon-left-ligevedstationen {
   position: absolute;
+  display: flex;
+  align-items: center;
   left: 0;
   height: 50vh;
   width: 55.6%;
@@ -1089,7 +1097,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .ligevedstationen-tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  padding: 0 25% 0% 10%;
   color: white;
 }
 
@@ -1120,6 +1128,8 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 
 .polygon-right-internet {
   position: absolute;
+  display: flex;
+  align-items: center;
   right: 0;
   height: 50vh;
   width: 55.6%;
@@ -1131,7 +1141,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .internet_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  padding: 0% 10% 0% 25%;
   color: white;
 }
 
