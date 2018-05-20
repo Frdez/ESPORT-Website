@@ -1053,7 +1053,7 @@ section.lige_ved_stationen {
 .plads_til_over_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 0 10% 0 25%;
+  margin: 0 10% 0 25%;
   color: white;
 
 }
@@ -1097,7 +1097,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .ligevedstationen-tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 0 25% 0% 10%;
+  margin: 0 25% 0% 10%;
   color: white;
 }
 
@@ -1141,35 +1141,101 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .internet_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 0% 10% 0% 25%;
+  margin: 0% 10% 0% 25%;
   color: white;
 }
 
 .planlag-event {
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
   background: #2c3e50;
   background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
   background: linear-gradient(to bottom, #486c75, #2c3e50);
 }
 
 .planlag-event h2 {
-  padding-top: 50px;
   color: white;
-  font-size: 40px;
+  font-size: 2vw;
 }
 
-.planlag-event button {
-  margin: auto;
-  display: block;
-  height: 100px;
-  width: 300px;
-  border-radius: 180px;
-  margin-top: 50px;
-  outline: none;
-  background: white;
-  font-size: 30px;
+::placeholder {
+  color: white;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 3% 10% 3% 10%;
+}
+
+input {
+
   font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
+  font-size: 0.875em;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+
+  border: solid 1px white;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background-color: rgba(36, 52, 64,0.7);
+}
+
+textarea {
+  font-family: 'Work Sans', sans-serif;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+
+  color: white;
+  font-size: 0.875em;
+
+  border: solid 1px white;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+background-color: rgba(36, 52, 64,0.7);
+}
+
+#submit {
+
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.875em;
+  color: white;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px white;
+  border-top: none;
+}
+
+#submit:hover {
+  background-color: rgba(5, 64, 95, 0.5);
 }
 
 /* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
