@@ -1285,3 +1285,73 @@ background-color: rgba(36, 52, 64,0.7);
  max-width: 100%;
  max-height: 75vh;
 }
+
+
+/* GOLFCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnegolf {
+    background-color: #52c234;
+    background: url("../img/golf.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnegolf::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #52c234;
+  background: -webkit-linear-gradient(to bottom, #52c234, #061700);
+  background: linear-gradient(to bottom, #52c234, #061700);
+  opacity: .7;
+}
+
+.polygon-rightgolf {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #062300;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftgolf {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftgolf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #52c234;
+    background: -webkit-linear-gradient(to bottom, #062400, #061700);
+    background: linear-gradient(to bottom, #062400, #061700);
+    opacity: .5;
+}
+
+.golf {
+  display: flex;
+  height: 35vh;
+  background-color: #062400;
+  position: relative;
+}
