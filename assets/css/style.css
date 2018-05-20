@@ -447,8 +447,9 @@ p {
 .sep {
   position: relative;
   margin:10px 0 20px 0;
-  border-top: 1px solid;
+  border-top: solid 1px;
   color: #405d72;
+  width: 100%;
 }
 
 
@@ -841,7 +842,7 @@ background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fir
 opacity: .7;
 }
 
-header.for_arrangoerer h1.top {
+.for_arrangoerer h1.top {
   background-color: rgba(5, 64, 95, .5);
   color: white;
   font-size: 50px;
@@ -852,7 +853,7 @@ header.for_arrangoerer h1.top {
   z-index: 10;
 }
 
-header.for_arrangoerer h1.bottom {
+.for_arrangoerer h1.bottom {
   background-color: rgba(5, 64, 95, .5);
   color: white;
   font-size: 50px;
@@ -1157,3 +1158,136 @@ background-color: rgba(36, 52, 64,0.7);
 }
 
 /* bottom */
+
+/* -----------E-SPORTS UNDERSIDER - VORES SERVICES----------- */
+
+#header-vores_services {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../img/center.png) center no-repeat;
+  background-size: cover;
+}
+
+
+#header-vores_services::before {
+  content: '';
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .7;
+}
+
+#herofont-services {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+
+#herofont-top {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  width: 27%;
+  font-size: 2.5vw;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#herofont-bottom {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  width: 22%;
+  font-size: 2.5vw;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.vores-services-sections {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+
+#picture {
+  position: relative;
+  height: 100vh;
+  width: 40%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+#picture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #243440;  /* fallback for old browsers */
+  opacity: .7;
+}
+
+#bootcamp {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #243440;
+  color: white;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+}
+
+.bootcamp-pics {
+ flex: 1;
+ max-width: 100%;
+ max-height: 33.33vh;
+ object-fit: cover;
+}
+
+.vores-services-sections1 {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+}
+
+
+#medlemskab {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #486c75;
+  color: white;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+}
+
+#medlemskab-picture {
+  position: relative;
+  height: 75vh;
+  width: 40%;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.medlemskab-pics {
+ max-width: 100%;
+ max-height: 75vh;
+}
