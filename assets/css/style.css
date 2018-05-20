@@ -1146,8 +1146,14 @@ background-color: rgba(36, 52, 64,0.7);
   margin: 10% 0 0 20%;
 }
 
-.kontaktospaa {
+.right-padding {
+  padding: 20% 10% 0% 20%;
+  color: white;
+}
 
+.right-padding h2,
+.right-padding p {
+  padding: 0 20% 0 10%;
 }
 
 /* bottom */
