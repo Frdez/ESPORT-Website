@@ -22,12 +22,14 @@ div.wrapper {
 /* navigation */
 
 #site-nav {
+  position: relative;
   width: 100%;
   height: 10vh;
   background: #314852;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 1;
 }
 
 #site-nav ul li {
@@ -42,10 +44,6 @@ div.wrapper {
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
 }
-
-/* #site-nav ul li:last-child {
-  border-right: none;
-} */
 
 #logo-nav {
   width: 4%;
@@ -102,7 +100,49 @@ div.wrapper {
   display: block;
 }
 
-/* HEADER */
+/* FOOTER */
+
+footer {
+  display: flex;
+  height: 35vh;
+  background-color: #192730;
+  position: relative;
+}
+
+.footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f3f1f0;
+  width: 50%;
+  height: 35vh;
+  margin: 0 10% 0 10%;
+}
+
+.footer-text-wrapper p {
+  margin-top: 5%;
+}
+
+.footer-social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer-social-wrapper a {
+  margin: 3%;
+  font-size: 40px;
+  text-decoration: none;
+  color: #f3f1f0;
+  transition: all 0.3s ease;
+}
+
+.footer-social-wrapper a:hover {
+  opacity: 0.50;
+}
+
+/* FORSIDE - slideshow */
 
 #slideshow {
   width: 100%;
@@ -189,15 +229,6 @@ div.wrapper {
   background-color: #484848;
   color: #FFFFFF;
 }
- /* .bg-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url('http://fred.wf/e-sport/assets/img/gaming.png') center center no-repeat;
-  background-size: cover;
-  z-index: -1;
-  position: absolute;
-} */
 
 #itemOne::before {
   content: '';
@@ -238,12 +269,13 @@ div.wrapper {
   opacity: .7;
 }
 
-
  .slogan {
-  position: absolute;
-  top: 50%;
-  left: 10vw;
-  transform: translate(0, -20%);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  z-index: 1;
 }
 
  .slogan h1:first-child {
@@ -273,32 +305,108 @@ div.wrapper {
   border-radius: 40px;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
-  background-color: white;
-  color: black;
-  border: none;
-  outline: none;
+  border: 1px solid #fff;
+  color: white;
   cursor: pointer;
   margin-top: 5%;
   font-size: 20px;
-  box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
-  -moz-box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
-  -webkit-box-shadow: 0 1px 0 0 #A8A8A8,inset 0 -1px 0 0 #B3B3B3,inset 0 0 0 1px #D4D4D4,0 2px 4px 0 #696969;
-  text-shadow: 0 1px 0 #FFFFFF;
   transition: all 0.3s ease;
+  background-color: Transparent;
 }
 
-.learn-more {
-  margin: auto;
+.learn-more:hover {
+  background-color: #243440;
 }
 
-.learn-more:hover, .learn-more:active {
-  border: none;
-  background-color: #cccccc;
-  opacity: 0.75;
+.knapholder {
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.cirkel {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.cirkel:hover {
+  opacity: 0.5;
   transform: scale(0.95);
 }
 
-/* about e-sportcenter */
+.cirkel span {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.cirkel::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 40px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* FORSIDE - About E-sportcenter section  */
 
 h2 {
   margin: 0;
@@ -318,6 +426,7 @@ p {
   height: 50vh;
   width: 100%;
   font-size: 0.8vw;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .about-esportcenter-text {
@@ -355,7 +464,7 @@ iframe {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-/* values */
+/* FORSIDE - Bootcamp + medlemskab */
 
 .esport-offers {
   flex-direction: column;
@@ -433,7 +542,7 @@ iframe {
   font-size: 0.8vw;
 }
 
-/* faciliteter */
+/* FORSIDE - Faciliteter section */
 
 .polygon-wrapper {
   height: 100vh;
@@ -486,7 +595,7 @@ iframe {
   color: #f3f1f0;
 }
 
-/* arrangør afsnit */
+/* FORSIDE - About arrangør section */
 
 .polygon-right-arrangør {
   position: absolute;
@@ -535,7 +644,7 @@ iframe {
   color: #f3f1f0;
 }
 
-/* Vores spil section*/
+/* FORSIDE - Vores spil section*/
 
 .vores-spil {
   display: flex;
@@ -570,153 +679,6 @@ iframe {
   opacity: 0.75;
   transform: scale(0.9);
 }
-
-
-/* footer */
-
-footer {
-  display: flex;
-  height: 35vh;
-  background-color: #192730;
-  position: relative;
-}
-
-.footer-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #f3f1f0;
-  width: 50%;
-  height: 35vh;
-  margin: 0 10% 0 10%;
-}
-
-.footer-text-wrapper p {
-  margin-top: 5%;
-}
-
-.footer-social-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-}
-
-.footer-social-wrapper a {
-  margin: 3%;
-  font-size: 40px;
-  text-decoration: none;
-  color: #f3f1f0;
-  transition: all 0.3s ease;
-}
-
-.footer-social-wrapper a:hover {
-  opacity: 0.50;
-}
-
-/* SLIDESHOW */
-
-/* Slideshow container */
-
-.slideshow-container {
-  position: absolute;
-  max-height: 90vh;
-}
-
-/* Hide the images by default */
-
-.mySlides {
-  display: none;
-}
-
-.slidePics {
-  width: 100%;
-  height: 100%;
-}
-
-/* Next & previous buttons */
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
-}
-
 
 /* -----------SPORTSPARK----------- */
 #site-nav.sportspark{
@@ -820,14 +782,6 @@ div.sponsor img{
     overflow: hidden;
 }
 
-
-
-/* -----------SPORTSPARK----------- */
-
-
-
-
-
 /* -----------E-SPORTS UNDERSIDER - BOOKNING---------- */
 
 .pakkehelper{
@@ -850,7 +804,7 @@ div.sponsor img{
 
 /* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
 
-header.for_arrangoerer {
+.for_arrangoerer {
   height: 70vh;
   width: 100%;
   overflow: hidden;
@@ -858,7 +812,7 @@ header.for_arrangoerer {
 
 header div.slogan_for_arrangoerer {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
@@ -956,6 +910,8 @@ section.lige_ved_stationen {
 
 .polygon-right {
   position: absolute;
+  display: flex;
+  align-items: center;
   right: 0;
   height: 50vh;
   width: 55.6%;
@@ -967,8 +923,9 @@ section.lige_ved_stationen {
 .plads_til_over_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  margin: 0 10% 0 25%;
   color: white;
+
 }
 
 .polygon-right-ligevedstationen {
@@ -997,6 +954,8 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 
 .polygon-left-ligevedstationen {
   position: absolute;
+  display: flex;
+  align-items: center;
   left: 0;
   height: 50vh;
   width: 55.6%;
@@ -1008,7 +967,7 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .ligevedstationen-tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  margin: 0 25% 0% 10%;
   color: white;
 }
 
@@ -1039,6 +998,8 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 
 .polygon-right-internet {
   position: absolute;
+  display: flex;
+  align-items: center;
   right: 0;
   height: 50vh;
   width: 55.6%;
@@ -1050,40 +1011,105 @@ clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 .internet_tekst {
   text-align: left;
   line-height: 1.73;
-  padding: 12% 10% 10% 25%;
+  margin: 0% 10% 0% 25%;
   color: white;
 }
 
 .planlag-event {
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
   background: #2c3e50;
   background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
   background: linear-gradient(to bottom, #486c75, #2c3e50);
 }
 
 .planlag-event h2 {
-  padding-top: 50px;
   color: white;
-  font-size: 40px;
+  font-size: 2vw;
 }
 
-.planlag-event button {
-  margin: auto;
-  display: block;
-  height: 100px;
-  width: 300px;
-  border-radius: 180px;
-  margin-top: 50px;
-  outline: none;
-  background: white;
-  font-size: 30px;
+::placeholder {
+  color: white;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 3% 10% 3% 10%;
+}
+
+input {
+
   font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
+  font-size: 0.875em;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+
+  border: solid 1px white;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
 }
 
-/* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
+input:hover {
+  background-color: rgba(36, 52, 64,0.7);
+}
 
-/* ESPORT UNDERSIDE - KONTAKT OS */
+textarea {
+  font-family: 'Work Sans', sans-serif;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: rgb(36, 52, 64);
+  outline: none;
+
+  color: white;
+  font-size: 0.875em;
+
+  border: solid 1px white;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+background-color: rgba(36, 52, 64,0.7);
+}
+
+#submit {
+
+
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.875em;
+  color: white;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px white;
+  border-top: none;
+}
+
+#submit:hover {
+  background-color: rgba(5, 64, 95, 0.5);
+}
+
+
+/* -----------E-SPORTS UNDERSIDER - KONTAKT OS----------- */
 
 .kontakt-os {
   height: 90vh;

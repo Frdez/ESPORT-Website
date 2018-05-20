@@ -30,8 +30,9 @@
       <button class="dropbtn">E-SPORTCENTER</button>
       </a>
       <div class="dropdown-content">
+        <a href="#">Planlæg dit besøg</a>
         <a href="assets/other_esportscenter_pages/for_arrangoer.html">For arrangører</a>
-        <a href="#">Medlemskab</a>
+        <a href="assets/other_esportscenter_pages/vores_services.html">Vores services</a>
         <a href="#">Kontakt os</a>
       </div>
     </div>
@@ -47,7 +48,7 @@
           <div class="slogan">
             <h1>BE A HERO.</h1>
             <h1 class="innerathlete">FIND YOUR INNER ATHLETE</h1>
-            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+            <button class="learn-more" type="button" name="button">LÆR MERE</button>
           </div>
         </div>
 
@@ -55,7 +56,7 @@
           <div class="slogan">
             <h1 style="font-size: 2.5vw;">HOLD ET EVENT</h1>
             <h1 class="innerathlete">UDEN BEGRÆNSNINGER</h1>
-            <button class="learn-more" type="button" name="button" onclick="ESC()">LÆR MERE</button>
+            <button class="learn-more" type="button" name="button" onclick="location.href='assets/other_esportscenter_pages/for_arrangoer.html';">LÆR MERE</button>
           </div>
         </div>
 
@@ -69,12 +70,20 @@
     </div>
 
     <div id="navLinks">
-      <ul>
-          <li class="itemLinks" data-pos="0vw"></li>
-          <li class="itemLinks" data-pos="-100vw"></li>
-          <li class="itemLinks" data-pos="-200vw"></li>
-      </ul>
-  </div>
+        <ul>
+            <li class="itemLinks" data-pos="0vw"></li>
+            <li class="itemLinks" data-pos="-100vw"></li>
+            <li class="itemLinks" data-pos="-200vw"></li>
+        </ul>
+    </div>
+
+    <div id="knap" class="knapholder">
+      <div class="cirkel" onclick="ESC()">
+        <span></span>
+      </div>
+      <h3>Scroll</h3>
+    </div>
+
   </header>
 
   <section id="about_esportcenter">
