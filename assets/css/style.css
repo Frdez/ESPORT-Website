@@ -1115,6 +1115,43 @@ background-color: rgba(36, 52, 64,0.7);
   height: 90vh;
 }
 
+.polygon-right-kontakt {
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  width: 55.6%;
+  background: #243440;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.polygon-left-kontakt {
+  position: absolute;
+  left: 0;
+  height: 90vh;
+  width: 55.6%;
+  background: #486c75;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  color: white;
+}
+
+.polygon-left-kontakt div {
+  padding-top: 5%;
+}
+
+.kontakt-tekst {
+  margin: 10% 0 0 20%;
+}
+
+.kontaktospaa {
+
+}
+
+/* bottom */
+
 /* -----------E-SPORTS UNDERSIDER - VORES SERVICES----------- */
 
 #header-vores_services {
