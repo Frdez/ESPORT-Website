@@ -841,7 +841,7 @@ background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fir
 opacity: .7;
 }
 
-header.for_arrangoerer h1.top {
+.for_arrangoerer h1.top {
   background-color: rgba(5, 64, 95, .5);
   color: white;
   font-size: 50px;
@@ -852,7 +852,7 @@ header.for_arrangoerer h1.top {
   z-index: 10;
 }
 
-header.for_arrangoerer h1.bottom {
+.for_arrangoerer h1.bottom {
   background-color: rgba(5, 64, 95, .5);
   color: white;
   font-size: 50px;
@@ -1116,3 +1116,44 @@ background-color: rgba(36, 52, 64,0.7);
 }
 
 /* -----------E-SPORTS UNDERSIDER - VORES SERVICES----------- */
+
+#header-vores_services {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../img/esportcenter.png) center no-repeat;
+  background-size: cover;
+}
+
+
+#header-vores_services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: .7;
+}
+
+
+#herofont-top {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 50px;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#herofont-bottom {
+  background-color: rgba(5, 64, 95, .5);
+  color: white;
+  font-size: 50px;
+  margin: 0% 10% 0% 10%;
+  font-family: 'Work Sans', sans-serif;
+}
