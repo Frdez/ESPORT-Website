@@ -1293,6 +1293,146 @@ background-color: rgba(36, 52, 64,0.7);
  max-height: 75vh;
 }
 
+/* BOOKINGSIDE -- */
+
+#header-booking {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+}
+
+#pakker {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.pakke {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 425px;
+  width: 285px;
+  background-color: white;
+  margin: 2%;
+  box-shadow: 0 15px 12px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.pakke:hover {
+  transform: scale(0.97);
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#price-overview {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personer {
+  border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.dage {
+border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.mad {
+  border: solid 1px white;
+  background: rgb(36, 52, 64);
+  outline: none;
+  color: white;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  font-family: 'Work Sans', sans-serif;
+}
 
 /* GOLFCENTER -- BARE DUMMY FORSIDE */
 
