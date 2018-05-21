@@ -430,6 +430,10 @@ p {
     box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+#about_esportcenter h2 {
+    text-align: left;
+}
+
 .about-esportcenter-text {
   width: 50%;
   display: flex;
