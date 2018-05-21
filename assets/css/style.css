@@ -47,6 +47,7 @@ div.wrapper {
 
 #logo-nav {
   width: 4%;
+  cursor: pointer;
 }
 
 .globe, .search {
