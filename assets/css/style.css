@@ -1362,3 +1362,141 @@ background-color: rgba(36, 52, 64,0.7);
   background-color: #062400;
   position: relative;
 }
+
+/* FITNESSCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnefitness {
+    background-color: #EF3B36;
+    background: url("../img/fitness.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnefitness::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #EF3B36;
+  background: -webkit-linear-gradient(to bottom, #EF3B36, #FFFFFF);
+  background: linear-gradient(to bottom, #EF3B36, #FFFFFF);
+  opacity: .7;
+}
+
+.polygon-rightfitness {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #c9302c;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftfitness {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftfitness::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #c9302c;
+    background: -webkit-linear-gradient(to bottom, #c9302c, #FFFFFF);
+    background: linear-gradient(to bottom, #c9302c, #FFFFFF);
+    opacity: .5;
+}
+
+.fitness {
+  display: flex;
+  height: 35vh;
+  background-color: #c9302c;
+  position: relative;
+}
+
+/* SPORTSCENTER -- BARE DUMMY FORSIDE */
+
+#itemOnesports {
+    background-color: #ED8F03;
+    background: url("../img/fitness.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#itemOnesports::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ED8F03;
+  background: -webkit-linear-gradient(to bottom, #ED8F03, #FFB75E);
+  background: linear-gradient(to bottom, #ED8F03, #FFB75E);
+  opacity: .7;
+}
+
+.polygon-rightsports {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #ED8F03;
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.polygon-leftsports {
+  position: absolute;
+  left: 0;
+  height: 50vh;
+  width: 55.6%;
+  background: #fff;
+  background: url(../img/sportshal.png);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.polygon-leftsports::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #c9302c;
+    background: -webkit-linear-gradient(to bottom, #ED8F03, #FFB75E);
+    background: linear-gradient(to bottom, #ED8F03, #FFB75E);
+    opacity: .5;
+}
+
+.sports {
+  display: flex;
+  height: 35vh;
+  background-color: #ED8F03;
+  position: relative;
+}
