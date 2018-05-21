@@ -1353,6 +1353,49 @@ background-color: rgba(36, 52, 64,0.7);
  max-height: 75vh;
 }
 
+.vores-services-sections2 {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background-color: green;
+}
+
+#dropin-picture {
+  height: 40vh;
+  width: 40%;
+  background-color: blue;
+    position: relative;
+}
+
+#drop-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 10% 3% 10%;
+  box-sizing: border-box;
+  height: 40vh;
+  width: 60%;
+  background-color: #243440;
+  color: white;
+}
+
+.dropin-pics {
+  max-width: 100%;;
+  object-fit: cover;
+}
+
+#dropin-picture:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #243440;  /* fallback for old browsers */
+  opacity: .7;
+}
+
 /* BOOKINGSIDE -- */
 
 #header-booking {
