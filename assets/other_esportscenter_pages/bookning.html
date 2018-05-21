@@ -28,6 +28,7 @@
           <button style="background-color: black;color:white;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
         </nav>
 
+        <div style="background: linear-gradient(to bottom, #486c75, #2c3e50);">
         <div class="slogan">
           <h1 class="innerathlete">Bookning</h1>
           <h1 class="innerathlete">Til E-sports Bootcamp</h1>
@@ -61,26 +62,30 @@
 
           <div class="pakkeholder">
               <p class="pakkenavn">Byg Selv Pakken</p>
-              <h3>For mellem 3 til 12 personer</h4>
+              <h3>For mellem 3 til 8 personer</h4>
               <h4>Vælg selv hvilket faciliteter i vil have adgang til</h4>
-              <h3 style="text-align: center;">Fra 1.499,00kr</h4>
-              <button style="margin-left: 75px" type="button" name="button" onclick ="add(2495)">Byg Nu</button>
+              <h3 style="text-align: center;">Fra 1.495,00kr</h4>
+
+              <select name="personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
+                <option hidden value="-1">Antal</option>
+                <option value="1">Vi er 3-5 Personer</option>
+                <option value="2">Vi er 6-8 personer</option>
+              </select>
+
+              <select name="dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
+                <option hidden value="-1">Tid/Mængden af dage</option>
+                <option value="1">24 Timer (med 1 nats overnatning)</option>
+                <option value="2">48 Timer (med 2 nætters overnatning)</option>
+                <option value="3">72 Timer (med 3 nætters overnatning)</option>
+                <option value="4">96 Timer (med 4 nætters overnatning)</option>
+              </select>
+
+              <button style="margin-left: 75px" type="button" name="button" onclick ="add(2495)">Bestil Her</button>
+              <h2 class="showprice" style="color:pink;">Din pris er: XXXX</h2>
           </div>
-
         </div>
-            <button type="button" name="button" onclick ="add(-895)">Fjern dag i luksus</button>
-
-          <h2 class="showprice" style="color:pink;">Din pris er: XXXX</h2>
-
-          <select name="personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
-            <option hidden value="-1">Antal</option>
-            <option value="1">Jeg er 1 person</option>
-            <option value="2">Vi er 2 personer</option>
-            <option value="3">Vi er 3 personer</option>
-            <option value="4">Vi er 4 personer</option>
-          </select>
         </div>
-
+      </div>
 
           <script src="../js/pakker.js"></script>
     </body>

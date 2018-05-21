@@ -4,10 +4,16 @@ var personer = 0;
 
 function antalPersoner(antal)
 {
-  personer = antal;
+  personer = antal*3;
   console.log(personer);
 
   add(0);
+}
+
+function antalDage(antal)
+{
+  add(total * -1)
+  add(1495.0 * antal);
 }
 
 function add(cost)
@@ -19,11 +25,11 @@ function add(cost)
   console.log(pris);
   if(personer != 0)
   {
-      pris.innerHTML = "Din pris er: " + total + " (Eller " + total/personer + " per person)";
+      pris.innerHTML = "Din pris er: " + total + "kr (Eller højest " + Math.round(total/personer) + "kr per person)";
   }
   else
   {
-      pris.innerHTML = "Din pris er: " + total;
+      pris.innerHTML = "Din pris er: " + total + "kr";
   }
 }
 

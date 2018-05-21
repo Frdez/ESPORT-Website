@@ -790,7 +790,8 @@ div.sponsor img{
 }
 
 .pakkeholder {
-  background-color: white;
+  color: white;
+  background-color: #243440;
   height: 450px;
   width: 300px;
   padding: 10px;
@@ -800,7 +801,7 @@ div.sponsor img{
 .pakkenavn {
   text-align: center;
   font-size: 25px;
-  color: black;
+  color: white;
 }
 
 /* -----------E-SPORTS UNDERSIDER - ARRANGØR----------- */
