@@ -25,7 +25,7 @@ function add(cost)
   console.log(pris);
   if(personer != 0)
   {
-      pris.textContent = "Din pris er: " + total + "kr (Eller højest " + Math.round(total/personer) + "kr per person)";
+      pris.textContent = "Din pris er: " + total + "kr (Eller mindst " + Math.round(total/personer) + "kr per person)";
   }
   else
   {
@@ -90,6 +90,27 @@ function skiftBilledeTilbage(pakke){
 
   if(pakke.id == "bygselv"){
     pakke.style.backgroundImage = "url('../img/bygselv1.png')"
+  }
+}
+
+var vilMad = false;
+
+function medMad(index){
+  if(index == 1){
+    vilMad = true;
+    add(personer * 100);
+  }
+
+  if(index == 2){
+    if(vilMad == true)
+    {
+    add(personer * -100);
+    console.log("træk fra");
+    }
+    else{
+      add(0);
+        console.log("træk ikke fra");
+    }
   }
 }
 
