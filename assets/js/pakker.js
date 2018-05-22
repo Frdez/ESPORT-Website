@@ -18,19 +18,18 @@ function antalDage(antal)
 
 function add(cost)
 {
-  total = 0;
   total += cost;
   console.log(total);
 
-  var pris =   document.querySelector(".showprice");
+  var pris =   document.querySelector("#showprice");
   console.log(pris);
   if(personer != 0)
   {
-      pris.innerHTML = "Din pris er: " + total + "kr (Eller højest " + Math.round(total/personer) + "kr per person)";
+      pris.textContent = "Din pris er: " + total + "kr (Eller højest " + Math.round(total/personer) + "kr per person)";
   }
   else
   {
-      pris.innerHTML = "Din pris er: " + total + "kr";
+      pris.textContent = "Din pris er: " + total + "kr";
   }
 }
 
