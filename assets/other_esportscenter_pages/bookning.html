@@ -2,119 +2,130 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Blaavandshuk Sportspark | E-SPORTCENTER Bookning</title>
-        <meta name="description" content="Bookning">
+        <title>Blaavandshuk Sportspark | E-SPORTCENTER</title>
+        <meta name="description" content="Bookning af bootcamps">
         <link rel="stylesheet" href="../css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Til responsiveness -->
         <meta name="language" content="Dansk" />
-        <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
         <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
-    <body>
-      <nav id="site-nav" class="flex row">
-        <img onclick="window.location.href='../other_pages/sportspark.html'" id="logo-nav" src="../img/SPB.png" alt="logo-header">
-        <ul>
-          <li><a href="../other_pages/sportspark.html">FORSIDE</a></li>
-          <li><a href="../other_pages/sportscenter.html">SPORTSCENTER</a></li>
-          <li><a href="../other_pages/golfcenter.html">GOLFCENTER</a></li>
-          <li><a href="../other_pages/fitnesscenter.html">FITNESSCENTER</a></li>
-        </ul>
-        <div class="dropdown">
-          <a href="../../index.html">
-          <button class="dropbtn">E-SPORTCENTER</button>
-          </a>
-          <div class="dropdown-content">
-            <a href="../other_esportscenter_pages/bookning.html">Planlæg dit besøg</a>
-            <a href="../other_esportscenter_pages/for_arrangoer.html">For arrangører</a>
-            <a href="../other_esportscenter_pages/vores_services.html">Vores services</a>
-            <a href="../other_esportscenter_pages/kontakt_os.html">Kontakt os</a>
+
+      <body>
+        <nav id="site-nav" class="flex row">
+          <img id="logo-nav" src="../img/SPB.png" alt="logo-header">
+          <ul>
+            <li><a href="">FORSIDE</a></li>
+            <li><a href="assets/other_pages/sportscenter.html">SPORTSCENTER</a></li>
+            <li><a href="assets/other_pages/golfcenter.html">GOLFCENTER</a></li>
+            <li><a href="assets/other_pages/fitnesscenter.html">FITNESSCENTER</a></li>
+          </ul>
+          <div class="dropdown">
+            <a href="../../index.html">
+            <button class="dropbtn">E-SPORTCENTER</button>
+            </a>
+            <div class="dropdown-content">
+              <a href="for_arrangoer.html">For arrangører</a>
+              <a href="#">Medlemskab</a>
+              <a href="#">Kontakt os</a>
+            </div>
           </div>
-        </div>
-          <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
-          <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="../img/arrow.png" alt="arrow"></i></button>
-          <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color:#243440;color:white;width: 150px;height: 50%;" class="booking" type="button" onclick="window.location.href='../other_esportscenter_pages/bookning.html'" name="button">BOOKING</button>
-      </nav>
+            <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
+            <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="../img/arrow.png" alt="arrow"></i></button>
+            <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color: #669999;color:white;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
+        </nav>
 
-        <div style="background: linear-gradient(to bottom, #486c75, #2c3e50);">
-        <div class="slogan">
-          <h1 class="innerathlete">Bookning</h1>
-          <h1 class="innerathlete">Til E-sports Bootcamp</h1>
+        <header id="header-booking">
+          <h1>Book dit ophold</h1>
 
-        <div class="pakkehelper">
+          <div id="pakker">
 
-          <div class="pakkeholder">
-              <p class="pakkenavn">Standardpakken</p>
-              <h3>For mellem 4 til 8 personer</h4>
-              <h4>24 timers bootcamp, inkludere overnatning, frit badeland, fitnesscenter og adgang til haller hvis de er ledige</h4>
-              <h3 style="text-align: center;">1.995,00kr</h4>
-              <button style="margin-left: 75px" type="button" name="button" onclick ="add(1995)">Bestil her</button>
+            <div class="pakke" id="standard" onmouseenter="skiftBillede(this)" onmouseleave="skiftBilledeTilbage(this)" style="background-image: url('../img/standardpakke1.png');">
+              <label class="container">
+                <input type="radio" onclick="gemCustom();" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="pakke" id="luksus" onmouseenter="skiftBillede(this)" onmouseleave="skiftBilledeTilbage(this)" style="background-image: url('../img/luksuspakken1.png');">
+              <label class="container">
+                <input type="radio" onclick="gemCustom();" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="pakke" id="lille" onmouseenter="skiftBillede(this)" onmouseleave="skiftBilledeTilbage(this)" style="background-image: url('../img/lillepakke1.png');">
+              <label class="container">
+                <input type="radio" onclick="gemCustom();" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="pakke" id="bygselv" onmouseenter="skiftBillede(this)" onmouseleave="skiftBilledeTilbage(this)" style="background-image: url('../img/bygselv1.png');">
+              <label class="container">
+                <input type="radio" onclick="visCustom();" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
           </div>
 
-          <div class="pakkeholder">
-              <p class="pakkenavn">Luksuspakken</p>
-              <h3>For mellem 5 til 8 personer</h4>
-              <h4>24 timers bootcamp, inkludere overnatning i luksus hytter, frit badeland, fitnesscenter og adgang til haller hvis de er ledige</h4>
-              <h3 style="text-align: center;">2.495,00kr</h4>
-              <h4 style="text-align: center;">Spar 300kr!</h4>
-              <button style="margin-left: 75px" type="button" name="button" onclick ="add(2495)">Bestil her</button>
+          <button type="button" style="height:80px; width:160px" class="dage" name="button" onclick="window.location.href='kontakt_os.html'" >Book Nu!</button>
+
+
+          <div id="price-overview">
+            <select class="personer" name="Antal personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
+              <option value=""disabled selected>Antal personer</option>
+              <option value="1">1-3 Personer</option>
+              <option value="2">4-6 Personer</option>
+              <option value="3">6-9 Personer</option>
+              <option value="4">10-12 Personer</option>
+
+            </select>
+            <select class="dage" name="Antal dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
+              <option value=""disabled selected>Antal dage (1495kr per dag)</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select class="mad" name="mad" onchange="if (this.selectedIndex) medMad(selectedIndex);">
+              <option value=""disabled selected>Mad (100kr per person)</option>
+              <option value="1">ja</option>
+              <option value="2">Nej</option>
+            </select>
+
+            <select class="mad" name="mad" onchange="if (this.selectedIndex) medFaci(selectedIndex);">
+              <option value=""disabled selected>Badeland mm. (50 kr)</option>
+              <option value="1">ja</option>
+              <option value="2">Nej</option>
+            </select>
+            <span class="dage" id="showprice" style=" display: flex; align-items: center; padding: 0px 14px 0px 14px; height: 48px;" > Din pris er : </span>
           </div>
+        </header>
 
-          <div class="pakkeholder">
-              <p class="pakkenavn">Den Lille Pakke</p>
-              <h3>For mellem 2 til 4 personer</h4>
-              <h4>max 12 timers bootcamp, frit badeland, fitnesscenter og adgang til haller hvis de er ledige</h4>
-              <h3 style="text-align: center;">995,00kr</h4>
-              <button style="margin-left: 75px" type="button" name="button" onclick ="add(995)">Bestil her</button>
+
+        <footer>
+          <div class="footer-text-wrapper">
+            <h2>Kontakt os</h2>
+            <p>Adresse <br>
+              <br>
+               Telefon <br>
+               <br>
+               Email   <br>
+            </p>
           </div>
-
-          <div class="pakkeholder">
-              <p class="pakkenavn">Byg Selv Pakken</p>
-              <h3>For mellem 3 til 8 personer</h4>
-              <h4>Vælg selv hvilket faciliteter i vil have adgang til</h4>
-              <h3 style="text-align: center;">Fra 1.495,00kr</h4>
-
-              <select name="personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
-                <option hidden value="-1">Antal</option>
-                <option value="1">Vi er 3-5 Personer</option>
-                <option value="2">Vi er 6-8 personer</option>
-              </select>
-
-              <select name="dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
-                <option hidden value="-1">Tid/Mængden af dage</option>
-                <option value="1">24 Timer (med 1 nats overnatning)</option>
-                <option value="2">48 Timer (med 2 nætters overnatning)</option>
-                <option value="3">72 Timer (med 3 nætters overnatning)</option>
-                <option value="4">96 Timer (med 4 nætters overnatning)</option>
-              </select>
-
-              <button style="margin-left: 75px" type="button" name="button" onclick ="add(2495)">Bestil Her</button>
-              <h2 class="showprice" style="color:pink;">Din pris er: XXXX</h2>
+          <div class="footer-social-wrapper">
+            <a href="index.html" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/omnesesport/" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
           </div>
-        </div>
-        </div>
-      </div>
+        </footer>
 
-      <footer>
-        <div class="footer-text-wrapper">
-          <h2>Kontakt os</h2>
-          <p>Adresse: Strandvejen 2, 6840 Oksbøl <br>
-            <br>
-             Telefon: +45 70 22 16 53 <br>
-             <br>
-             Email: Info@SportsPark.dk<br>
-          </p>
-        </div>
-        <div class="footer-social-wrapper">
-          <a href="https://www.facebook.com/sportsparkblaavandshuk/" class="fab fa-facebook"></a>
-          <a href="https://www.instagram.com/sportsparkblaavandshuk/?hl=en" class="fab fa-instagram"></a>
-          <a href="https://www.youtube.com/channel/UCCDcr6_2-gnvSxVo1r_bP1w" class="fab fa-youtube"></a>
-        </div>
-      </footer>
-
-          <script src="../js/pakker.js"></script>
+        <script src="../js/pakker.js"></script>
     </body>
 </html>
