@@ -41,45 +41,47 @@
 
         <header id="header-booking">
           <h1>Book dit ophold</h1>
+
           <div id="pakker">
-            <div class="pakke">
+
+            <div class="pakke" style="background-image: url('../img/standardpakke1.png');">
               <label class="container">
-                <input type="radio" checked="checked" name="radio">
+                <input type="radio" onclick="gemCustom();" name="radio">
                 <span class="checkmark"></span>
               </label>
             </div>
 
-            <div class="pakke">
+            <div class="pakke" style="background-image: url('../img/luksuspakken1.png');">
               <label class="container">
-                <input type="radio" checked="checked" name="radio">
+                <input type="radio" onclick="gemCustom();" name="radio">
                 <span class="checkmark"></span>
               </label>
             </div>
 
-            <div class="pakke">
+            <div class="pakke" style="background-image: url('../img/lillepakke1.png');">
               <label class="container">
-                <input type="radio" checked="checked" name="radio">
+                <input type="radio" onclick="gemCustom();" name="radio">
                 <span class="checkmark"></span>
               </label>
             </div>
 
-            <div class="pakke">
+            <div class="pakke" style="background-image: url('../img/bygselv1.png');">
               <label class="container">
-                <input type="radio" checked="checked" name="radio">
+                <input type="radio" onclick="visCustom();" name="radio">
                 <span class="checkmark"></span>
               </label>
             </div>
 
           </div>
           <div id="price-overview">
-            <select class="personer" name="Antal personer">
+            <select class="personer" name="Antal personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
               <option value=""disabled selected>Antal personer</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
-            <select class="dage" name="Antal dage">
+            <select class="dage" name="Antal dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
               <option value=""disabled selected>Antal dage</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -91,7 +93,7 @@
               <option value="1">ja</option>
               <option value="2">Nej</option>
             </select>
-            <span class="dage" style=" display: flex; align-items: center; padding: 0px 14px 0px 14px; height: 48px;" > Din pris er : </span>
+            <span class="dage" class="showprice" style=" display: flex; align-items: center; padding: 0px 14px 0px 14px; height: 48px;" > Din pris er : </span>
           </div>
         </header>
 
@@ -113,6 +115,6 @@
           </div>
         </footer>
 
-
+        <script src="../js/pakker.js"></script>
     </body>
 </html>

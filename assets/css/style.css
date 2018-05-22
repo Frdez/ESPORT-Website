@@ -1341,6 +1341,7 @@ background-color: rgba(36, 52, 64,0.7);
 
 .pakke:hover {
   transform: scale(0.97);
+  background-image: url("../img/standardpakke2.jpg");
 }
 
 .container {

@@ -18,6 +18,7 @@ function antalDage(antal)
 
 function add(cost)
 {
+  total = 0;
   total += cost;
   console.log(total);
 
@@ -32,6 +33,30 @@ function add(cost)
       pris.innerHTML = "Din pris er: " + total + "kr";
   }
 }
+
+
+//Bookning1 SIDE
+
+var bygSelv = document.querySelector("#price-overview");
+var customSelected = false;
+
+console.log("Running");
+console.log(bygSelv);
+
+if(customSelected == false){
+  console.log("hiding");
+  bygSelv.style.display = "none";
+}
+
+function visCustom(){
+    customSelected = true;
+    bygSelv.style.display = "flex";
+}
+
+function gemCustom(){
+    customSelected = false;
+    bygSelv.style.display = "none";
+  }
 
 
 
