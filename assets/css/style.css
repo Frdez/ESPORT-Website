@@ -36,6 +36,11 @@ div.wrapper {
   display: inline;
   border-right: solid 1px white;
   padding: 0 10px 0 5px;
+  transition: all 0.3s ease;
+}
+
+#site-nav ul li:hover {
+ opacity: 0.5;
 }
 
 #site-nav ul li a {
@@ -68,10 +73,12 @@ div.wrapper {
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
   margin: 0;
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgba(0, 0, 0, 0);
+  opacity: 0.5;
 }
 
 .dropdown-content {
@@ -95,6 +102,7 @@ div.wrapper {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  
 }
 
 .dropdown:hover .dropdown-content {
@@ -1919,7 +1927,6 @@ border: solid 1px white;
     align-items: center;
 }
 
-/* -----------SPORTSPARK----------- */
 #site-nav.sportspark{
 background: white;
 }
