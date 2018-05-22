@@ -1323,7 +1323,7 @@ background-color: rgba(36, 52, 64,0.7);
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+
 }
 
 
@@ -1409,11 +1409,12 @@ background-color: rgba(36, 52, 64,0.7);
 }
 
 #price-overview {
-  height: 40vh;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3% 0 3% 0;
 }
 
 .personer {
@@ -1444,6 +1445,14 @@ border: solid 1px white;
   height: 50px;
   padding: 0px 15px 0px 15px;
   font-family: 'Work Sans', sans-serif;
+}
+
+#book-now {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin: 3% 0 3% 0;
+
 }
 
 /* GOLFCENTER -- BARE DUMMY FORSIDE */
