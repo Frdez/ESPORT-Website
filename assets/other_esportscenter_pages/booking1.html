@@ -87,14 +87,20 @@
 
             </select>
             <select class="dage" name="Antal dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
-              <option value=""disabled selected>Antal dage</option>
+              <option value=""disabled selected>Antal dage (1495kr per dag)</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
             <select class="mad" name="mad" onchange="if (this.selectedIndex) medMad(selectedIndex);">
-              <option value=""disabled selected>Mad</option>
+              <option value=""disabled selected>Mad (100kr per person)</option>
+              <option value="1">ja</option>
+              <option value="2">Nej</option>
+            </select>
+
+            <select class="mad" name="mad" onchange="if (this.selectedIndex) medFaci(selectedIndex);">
+              <option value=""disabled selected>Badeland mm. (50 kr)</option>
               <option value="1">ja</option>
               <option value="2">Nej</option>
             </select>

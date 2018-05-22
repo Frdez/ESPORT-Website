@@ -114,6 +114,27 @@ function medMad(index){
   }
 }
 
+var vilFaci = false;
+
+function medFaci(index){
+  if(index == 1){
+    vilFaci = true;
+    add(50);
+  }
+
+  if(index == 2){
+    if(vilFaci == true)
+    {
+    add(50);
+    console.log("træk fra");
+    }
+    else{
+      add(0);
+        console.log("træk ikke fra");
+    }
+  }
+}
+
 
 //SLIDESHOW STUFF \/\/\/
 
