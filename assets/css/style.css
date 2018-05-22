@@ -741,107 +741,7 @@ iframe {
   transform: scale(0.9);
 }
 
-/* -----------SPORTSPARK----------- */
-#site-nav.sportspark{
-background: white;
-}
 
-#site-nav.sportspark ul li {
-border-color: #292929;
-}
-#site-nav.sportspark ul li a{
-  color: #292929;
-}
-
-#site-nav.sportspark .dropdown .dropbtn {
-    color: black;
-}
-
-header.sportspark {
-    height: 45vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-header.sportspark img{
-    display: block;
-    width: 100%;
-    height: 40vh;
-    overflow: hidden;
-    margin: 2vh auto 2vh auto;
-}
-
-section.sportspark_info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow:hidden;
-}
-
-section div.infobox {
-    display: inline-block;
-    background: #1966ad;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    width: 400px;
-    background: #1966ad;
-    margin: 5vh 0 5vh 0;
-}
-
-.blok {
-    font-size:30px;
-    font-weight: 700;
-text-align: center;
-padding-top: 20%;
-}
-
-section.sportspark_nyheder {
-    background: green;
-    height: 60vh;
-    width: 100%;
-}
-
-section div.infobox img {
-    height: 25vh;
-    width: 20vw;
-}
-
-
-section.instagram {
-    position: relative;
-    background: red;
-    height: 40vh;
-    width: 100%;
-    color: #292929;
-}
-
-section#sponsorer {
-    background: blue;
-    height: 50vh;
-    width: 100%;
-    color: #292929;
-}
-
-div.wrap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-div.sponsor {
-    flex: 1 19%;
-    height: 200px;
-    width: 500px;
-    background: green;
-    border: solid 2px black;
-}
-
-div.sponsor img{
-    height: 190px;
-    width: 190px;
-    overflow: hidden;
-}
 
 /* -----------E-SPORTS UNDERSIDER - BOOKNING---------- */
 
@@ -1742,4 +1642,295 @@ border: solid 1px white;
   height: 35vh;
   background-color: #ED8F03;
   position: relative;
+}
+
+/* SPORTSCENTER -- Forside */
+
+
+#slideshow-forside {
+  margin-top: 3%;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#contentwrapper {
+  width: 300vw;
+  transform: translate3d(0,0, 0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.content-forside {
+  float: left;
+  width: 100vw;
+  height: 50vh;
+  white-space: normal;
+  background-repeat: no-repeat;
+}
+
+#itemOne {
+    background-color: #ADFF2F;
+    background: url("http://fred.wf/e-sport/assets/img/gaming.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#itemTwo {
+    background-color: #FF7F50;
+    background: url(../img/AAULAN.png) ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#itemThree {
+    background-color: #1E90FF;
+    background: url(../img/teamwork.png) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navLinks {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#navLinks ul {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 6px;
+}
+
+#navLinks ul li {
+  height: 5px;
+  width: 5px;
+  margin: 10px;
+  list-style: none;
+  cursor: pointer;
+  background-color: #CCCCCC;
+  padding: 5px;
+  border-radius: 45px;
+}
+
+#navLinks ul li:hover {
+  background-color: white;
+}
+
+#navLinks ul li.active {
+  background-color: #333333;
+  color: #FFFFFF;
+  outline-width: 7px;
+}
+
+#navLinks ul li.active:hover {
+  background-color: #484848;
+  color: #FFFFFF;
+}
+
+#itemOne::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #486c75, #2c3e50);
+  background: linear-gradient(to bottom, #486c75, #2c3e50);
+  opacity: .7;
+}
+
+#itemTwo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+  background: linear-gradient(to bottom, #243B55, #141E30);
+  opacity: .7;
+}
+
+#itemThree::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c3e50;
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #486c75);
+  background: linear-gradient(to bottom, #2c3e50, #486c75);
+  opacity: .7;
+}
+
+#main-info-forside {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.infobox {
+    background: #1966ad;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 2% 2% 2% 2%;
+    background: #1966ad;
+    margin: 3% 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: solid 3px white;
+}
+
+
+.blok {
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sportspark_nyheder {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    padding: 3% 0 3% 0;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.big-news-pic {
+  height: 100%;
+  width: 70%;
+  background-color: #595959;
+  border-right: solid 3px white;
+}
+
+.andet-wrapper {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.andet {
+  height: 33.33%;
+  width: 100%;
+  background-color: #333333;
+  border-bottom: solid 3px white;
+}
+
+.sportspark_info {
+    padding: 3% 0 3% 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+}
+
+.infopics {
+  display: flex;
+  flex-direction: column;
+  border-right: solid 3px white;
+  background-color: #e6e6e6;
+}
+
+.pics-forside {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.infopics p {
+  margin: 0 20px 20px 20px;
+}
+
+.infopics h2 {
+  margin: 30px 20px 10px 20px;
+}
+
+.instagram {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    color: #292929;
+    padding: 3% 0 3% 0;
+    border-bottom: solid 1px black;
+}
+
+.instapic {
+  flex: 1;
+  max-width: 16.66%;
+  border-right: solid 3px white;
+}
+
+#sponsorer {
+    padding: 3% 0 3% 0;
+    height: 50vh;
+    width: 100%;
+    color: #292929;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  height: 25vh;
+}
+
+.wrap img {
+ max-width: 20%;
+}
+
+#forside1 {
+    background-color: #ADFF2F;
+    background: url("../img/svømme.jpg") center center no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#forside2  {
+    background-color: #FF7F50;
+    background: url(../img/fodbold.jpg) ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+#forside3  {
+    background-color: #1E90FF;
+    background: url(../img/controller.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* -----------SPORTSPARK----------- */
+#site-nav.sportspark{
+background: white;
+}
+
+#site-nav.sportspark ul li {
+border-color: #292929;
+}
+#site-nav.sportspark ul li a{
+  color: #292929;
+}
+
+#site-nav.sportspark .dropdown .dropbtn {
+    color: black;
 }
