@@ -125,7 +125,7 @@ function medFaci(index){
   if(index == 2){
     if(vilFaci == true)
     {
-    add(50);
+    add(-50);
     console.log("træk fra");
     }
     else{
