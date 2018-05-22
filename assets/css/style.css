@@ -1337,11 +1337,12 @@ background-color: rgba(36, 52, 64,0.7);
   margin: 2%;
   box-shadow: 0 15px 12px rgba(0,0,0,0.12);
   transition: all 0.3s ease;
+  background-image: url("../img/standardpakke1.png");
 }
 
 .pakke:hover {
   transform: scale(0.97);
-  background-image: url("../img/standardpakke2.jpg");
+  background-image: url("../img/standardpakke2.png");
 }
 
 .container {

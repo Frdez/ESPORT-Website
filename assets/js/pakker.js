@@ -58,6 +58,41 @@ function gemCustom(){
     bygSelv.style.display = "none";
   }
 
+function skiftBillede(pakke){
+  if(pakke.id == "standard"){
+    pakke.style.backgroundImage = "url('../img/standardpakke2.png')"
+  }
+
+  if(pakke.id == "luksus"){
+    pakke.style.backgroundImage = "url('../img/luksuspakken2.png')"
+  }
+
+  if(pakke.id == "lille"){
+  pakke.style.backgroundImage = "url('../img/lillepakke2.png')";
+  }
+
+  if(pakke.id == "bygselv"){
+    pakke.style.backgroundImage = "url('../img/bygselv2.png')"
+  }
+}
+
+function skiftBilledeTilbage(pakke){
+  if(pakke.id == "standard"){
+    pakke.style.backgroundImage = "url('../img/standardpakke1.png')"
+  }
+
+  if(pakke.id == "luksus"){
+    pakke.style.backgroundImage = "url('../img/luksuspakken2.png')"
+  }
+
+  if(pakke.id == "lille"){
+  pakke.style.backgroundImage = "url('../img/lillepakke1.png')";
+  }
+
+  if(pakke.id == "bygselv"){
+    pakke.style.backgroundImage = "url('../img/bygselv1.png')"
+  }
+}
 
 
 //SLIDESHOW STUFF \/\/\/
