@@ -81,7 +81,7 @@ function skiftBilledeTilbage(pakke){
   }
 
   if(pakke.id == "luksus"){
-    pakke.style.backgroundImage = "url('../img/luksuspakken2.png')"
+    pakke.style.backgroundImage = "url('../img/luksuspakken1.png')"
   }
 
   if(pakke.id == "lille"){
