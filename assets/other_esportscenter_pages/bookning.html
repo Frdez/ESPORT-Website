@@ -25,9 +25,7 @@
             <li><a href="../other_pages/fitnesscenter.html">FITNESSCENTER</a></li>
           </ul>
           <div class="dropdown">
-            <a href="../../index.html">
-            <button class="dropbtn">E-SPORTCENTER</button>
-            </a>
+            <button onclick="window.location.href='../../index.html'" class="dropbtn">E-SPORTCENTER</button>
             <div class="dropdown-content">
               <a href="for_arrangoer.html">For arrangører</a>
               <a href="#">Medlemskab</a>
@@ -35,8 +33,8 @@
             </div>
           </div>
             <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="search fas fa-search"></i>SØG</button>
-            <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="../img/arrow.png" alt="arrow"></i></button>
-            <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color: #669999;color:white;width: 150px;height: 50%;" class="booking" type="button" name="button">BOOKING</button>
+            <button style="width: 100px; height: 40%; border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; background-color: white; border: none; outline: none; cursor: pointer;" type="button" name="button"><i class="globe fas fa-globe"></i>SPROG<img style="width: 15%;margin-left: 3px;" src="../img/arrow.png" alt="arrow"></button>
+            <button class="bookingbtn" style="border-radius: 40px; margin-left: 20px; font-weight: 700; font-family: 'Work Sans', sans-serif; border: none; outline: none; cursor: pointer;background-color: #669999;color:white;width: 150px;height: 50%;" type="button" name="button">BOOKING</button>
         </nav>
 
         <header id="header-booking">
@@ -78,7 +76,7 @@
           <div id="price-overview">
 
             <select class="personer" name="Antal personer" onchange="if (this.selectedIndex) antalPersoner(selectedIndex);">
-              <option value=""disabled selected>Antal personer</option>
+              <option value="" disabled selected>Antal personer</option>
               <option value="1">1-3 Personer</option>
               <option value="2">4-6 Personer</option>
               <option value="3">6-9 Personer</option>
@@ -86,20 +84,20 @@
 
             </select>
             <select class="dage" name="Antal dage" onchange="if (this.selectedIndex) antalDage(selectedIndex);">
-              <option value=""disabled selected>Antal dage (1495kr per dag)</option>
+              <option value="" disabled selected>Antal dage (1495kr per dag)</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
             <select class="mad" name="mad" onchange="if (this.selectedIndex) medMad(selectedIndex);">
-              <option value=""disabled selected>Mad (100kr per person)</option>
+              <option value="" disabled selected>Mad (100kr per person)</option>
               <option value="1">ja</option>
               <option value="2">Nej</option>
             </select>
 
             <select class="mad" name="mad" onchange="if (this.selectedIndex) medFaci(selectedIndex);">
-              <option value=""disabled selected>Badeland mm. (50 kr)</option>
+              <option value="" disabled selected>Badeland mm. (50 kr)</option>
               <option value="1">ja</option>
               <option value="2">Nej</option>
             </select>
