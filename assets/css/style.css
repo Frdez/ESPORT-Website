@@ -613,6 +613,11 @@ iframe {
   font-size: 1vw;
 }
 
+#membershippic {
+  height: 75%;
+  width: 75%;
+}
+
 /* FORSIDE - Faciliteter section */
 
 .polygon-wrapper {
